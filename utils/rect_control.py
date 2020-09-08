@@ -37,3 +37,10 @@ class RectControl:
                 self.h -= 1
         if key == ord('4'):
             self.h += 1
+
+    def get_csv_vals(self, class_name):
+        return {'x1': self.x-self.w,
+                'y1': self.y-self.h,
+                'x2': self.x+self.w,
+                'y2': self.y+self.h,
+                'Class': class_name}

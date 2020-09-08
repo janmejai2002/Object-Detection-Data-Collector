@@ -1,4 +1,5 @@
 import cv2
+import argparse
 
 
 def callback(value):
@@ -37,3 +38,11 @@ def restartTrackbar(range_filter, vals):
             cv2.createTrackbar("%s_%s" % (j, i), "Trackbars",
                                vals[count], 255, callback)
             count += 1
+
+
+def get_arguments():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("-c", "--class", default='Random', type=str, help="Object Class"
+                    )
+    args = vars(ap.parse_args())
+    return args
