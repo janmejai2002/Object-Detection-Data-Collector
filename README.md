@@ -37,11 +37,14 @@ The image is saved inside a folder called `Random` if you did not pass a class v
 
 The code is easy to run and understand and uses only OpenCV, Numpy and imutils.
 
+---
+
 # Arguments
 
     python main.py --help
 
-Output:
+Output:  
+    
     usage: main.py [-h] [-c CLASS]
 
     optional arguments:
@@ -54,4 +57,6 @@ So if I am taking pictures of an apple then I can pass
 
 Now the frame you save will be inside a directory titled apple and the fieldname `Class` for csv will also change.
 
+---
 
+Do star if you like it and have fun :D
