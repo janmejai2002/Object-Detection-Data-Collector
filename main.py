@@ -93,6 +93,8 @@ while True:
             row_write = csv.DictWriter(file, fieldnames=labels)
             row_write.writerow(csv_dict)
 
+    if key == ord('c') or key == ord('C'):
+        args['class'] = input("Please enter new class name : ")
     rect.control(key)
 
 cv2.destroyAllWindows()
